@@ -9838,6 +9838,8 @@ Background Image
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 75%;
+
 }
 
 .bg_image--1 {
@@ -18139,18 +18141,22 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   animation: fadeInUp 1.5s;
   animation-delay: 0s;
   display: block;
+  height: 75%;
 }
 .banner-three .swiper-slide-active .banner-three-innerr .title {
   animation: fadeInUp 1.5s;
   animation-delay: 0s;
+  height: 75%;
 }
 .banner-three .swiper-slide-active .banner-three-innerr .disc {
   animation: fadeInUp 1.5s;
   animation-delay: 0s;
+  height: 75%;
 }
 .banner-three .swiper-slide-active .banner-three-innerr a.rts-btn {
   animation: fadeInUp 2.5s;
   animation-delay: 0s;
+  height: 75%;
 }
 .banner-three.banner-four {
   background: url(../images/banner/img.jpg);
@@ -18158,6 +18164,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 75%;
 }
 .banner-three.banner-four::before {
   background: none;
@@ -18450,16 +18457,16 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .bg_banner-three {
-  background-image: url(../images/banner/banner-04.jpg);
+  background-image: url(../images/banner/slot-machine.avif);
   position: relative;
   z-index: 1;
   width: 100%;
 }
 .bg_banner-three.slide-2 {
-  background-image: url(../images/banner/banner-08.jpg);
+  background-image: url(../images/banner/spin-wheel.avif);
 }
 .bg_banner-three.slide-3 {
-  background-image: url(../images/banner/banner-09.jpg);
+  background-image: url(../images/banner/blackjack-table.avif);
 }
 .bg_banner-three.eight {
   background-image: url(../images/banner/it-3.webp);
@@ -18475,7 +18482,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 .bg_banner-three::after {
   position: absolute;
-  height: 100%;
+  height: 75%;
   content: "";
   left: 0;
   top: 0;
@@ -19231,12 +19238,14 @@ p.disc.banner-para {
 
 .rts-banner-area.banner-human-bg {
   position: relative;
+  height: 75%;
 }
 .rts-banner-area.banner-human-bg .shape {
   position: absolute;
   top: 65%;
   left: -2.3%;
   animation: jump-2 5s linear infinite;
+  height: 75%;
 }
 @media only screen and (max-width: 575px) {
   .rts-banner-area.banner-human-bg .shape {
