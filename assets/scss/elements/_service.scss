@@ -385,7 +385,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            content: '01';
+            content: '->';
             font-size: 18px;
             background: #fff;
             border-radius: 0 0 0 15px;
@@ -400,49 +400,49 @@
 
         &.two {
             &::after {
-                content: '02';
+                content: '->';
             }
         }
 
         &.three {
             &::after {
-                content: '03';
+                content: '->';
             }
         }
 
         &.four {
             &::after {
-                content: '04';
+                content: '->';
             }
         }
 
         &.five {
             &::after {
-                content: '05';
+                content: '->';
             }
         }
 
         &.six {
             &::after {
-                content: '06';
+                content: '->';
             }
         }
 
         &.seven {
             &::after {
-                content: '07';
+                content: '->';
             }
         }
 
         &.eight {
             &::after {
-                content: '08';
+                content: '->';
             }
         }
 
         &.nine {
             &::after {
-                content: '09';
+                content: '->';
             }
         }
 

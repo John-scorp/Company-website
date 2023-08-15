@@ -30716,4 +30716,21 @@ p.disc {
 .footer-five .footer-one-single-wized .single-footer-post .post-right .red-more {
   color: var(--color-primary-2);
 }
+
+.footer-style {
+    color: black;
+    font-weight: 600;
+    background: #F64A00;
+    color: #ffffff;
+    
+}
+
+.game-width{
+  width: auto;
+  color: #5D666F;
+  font: 16px;
+  font-family: "DM sans", sans-serif;
+  
+}
+
 /*# sourceMappingURL=../maps/style.css.map */
