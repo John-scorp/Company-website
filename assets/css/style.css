@@ -18539,7 +18539,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 .banner-three-inner::after {
   position: absolute;
-  content: "Solution Model";
+  content: "";
   left: 15%;
   line-height: 198px;
   width: 100%;
