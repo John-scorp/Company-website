@@ -84,7 +84,7 @@
                                         </ul>
                                     </li>
                                 -->
-                                <li class="nav-item"> 
+                                <li class="nav-item">
                                     <a class="nav-item" href="our-service.html">Services</a>
                                     <!-- <ul class="submenu menu-link3">
                                         <li class="sub-droupdown">
@@ -97,7 +97,7 @@
                                         </li>
                                         <li><a href="service-details.html">Service Details</a></li>
                                     </ul> -->
-                                </li> 
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-item" href="products.html">Products</a>
                                     <!-- <ul class="submenu menu-link">
@@ -133,7 +133,7 @@
                                                 <li><a href="team-style-5.html">Team Style 5</a></li>
                                                 <li><a href="team-details.html">Team Details</a></li>
                                             </ul>
-                                        </li> 
+                                        </li>
                                     </ul>-->
                                 </li>
                                 <!-- <li class="has-droupdown">
@@ -216,12 +216,12 @@
                 </p>
                 <div class="mainmenu">
                     <a href="contactus.html" class="rts-btn btn-primary-3">Get Quote</a>
-            
+
                 </div>
-                
+
                 <div class="get-in-touch">
                     <!-- title -->
-                    
+
                     <!-- title End -->
                     <div class="wrapper">
                         <!-- single -->
@@ -256,7 +256,7 @@
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>  -->
-                    
+
                 </div>
             </div>
             <div class="body-mobile d-block d-xl-none">
@@ -290,9 +290,9 @@
                                         <li class="mobile-menu-link"><a href="onepage-seven.html">Human Resources Onepage</a></li>
                                         <li class="mobile-menu-link"><a href="onepage-eight.html">IT Solutions Onepage</a></li>
                                     </ul>
-                                </li> 
+                                </li>
                             </ul>
-                        </li> 
+                        </li>
                         <li class="menu-item"><a class="menu-link" href="about-us.html">About Us</a></li>  -->
                         <li class="menu-item">
                             <a class="menu-link" href="our-service.html">Services</a>
@@ -303,7 +303,7 @@
                                         <li><a href="our-service.html">Service 1</a></li>
                                         <li><a href="service-2.html">Service 2</a></li>
                                         <li><a href="service-3.html">Service 3</a></li>
-                                    </ul> 
+                                    </ul>
                                 </li>
                                 <li class="mobile-menu-link"><a href="service-details.html">Service Details</a></li>
                             </ul> -->
@@ -473,21 +473,33 @@
                     <div class="rts-contact-fluid rts-section-gap">
                         <div class="rts-title-area contact-fluid text-center mb--50">
                             <p class="pre-title" style="color:#F64A00;">
-                                Get In Touch 
+                                Get In Touch
                             </p>
                             <h2 class="title">Needs Help? Let’s Get in Touch</h2>
                         </div>
                         <div class="form-wrapper">
                             <div id="form-messages"></div>
-                            <form id="contact-form" action="mailer.php" method="post">
+<!--                            <form id="contact-form" action="http://127.0.0.1:8000/contact_us" method="get" content="text/plain">-->
+<!--                                <div class="name-email">-->
+<!--                                    <input type="text" name="name" placeholder="Your Name" required>-->
+<!--                                    <input type="email" name="email" placeholder="Email Address" required>-->
+<!--                                </div>-->
+<!--                                <input type="text" name="subject" placeholder="Your Subject">-->
+<!--                                <textarea placeholder="Type Your Message" name="message"></textarea>-->
+<!--                                <button type="submit" class="rts-btn btn-primary-3">Send Message</button>-->
+<!--                            </form>-->
+
+                          <form id="contact-form">
                                 <div class="name-email">
-                                    <input type="text" name="name" placeholder="Your Name" required>
-                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <input id="client_name" type="text" name="name" placeholder="Your Name" required>
+                                    <input id="client_email" type="email" name="email" placeholder="Email Address" required>
                                 </div>
-                                <input type="text" name="subject" placeholder="Your Subject">
-                                <textarea placeholder="Type Your Message" name="message"></textarea>
-                                <button type="submit" class="rts-btn btn-primary-3">Send Message</button>
+                                <input id="client_sub" type="text" name="subject" placeholder="Your Subject">
+                                <textarea id="client_txt" placeholder="Type Your Message" name="message"></textarea>
+                                <button id="submit_btn" type="button" class="rts-btn btn-primary-3" onclick="return postMyFormData();">Send Message</button>
+
                             </form>
+                           <button id="back_btn" type="button" class="rts-btn btn-primary-3" hidden  onclick="javascript:history.back();return false;">Thanks for submitting your message. Click to go back</button>
                         </div>
                     </div>
                 </div>
@@ -501,7 +513,7 @@
 
     <!-- start header area -->
     <!-- rts footer area start -->
-    
+
         <!-- copyright area start -->
         <div class="copyright-area ptb--20 footer-style">
             <div class="container">
@@ -536,7 +548,46 @@
         </svg>
     </div>
     <!-- progress Back to top End -->
+    <script>
+      function postMyFormData() {
+    var client_name = $('#client_name').val();
+    var client_email = $('#client_email').val();
+    var client_subject = $('#client_sub').val();
+    var client_txt_msg = $('#client_txt').val();
+    // var formData = $('#contact-form').serializeArray();
+    // formData = formData.reduce(function(obj, item) {
+    //     obj[item.name] = item.value;
+    //     return obj;
+    // }, {});
+    // formData = JSON.stringify(formData);
+        //http://www.akaptech.com:8000/
+        var url = "http://www.akaptech.com:8000/contact_us?&name=" +client_name+"&jsoncallback=?"+"&email="+client_email+"&subject="+client_subject+"&msg="+client_txt_msg;
 
+    $.ajax({
+        type: "GET",
+        url: url,
+        success: function(data) {
+          console.log("Success data="+data);
+        },
+        dataType: "jsonp",
+        contentType : "application/json",
+        crossDomain : true,
+    });
+    //
+    //   $('#client_name').val("");
+    // $('#client_email').val("");
+    // $('#client_sub').val("");
+    // $('#client_txt').val("");
+   document.getElementById("client_name").hidden = true;
+   document.getElementById("client_email").hidden = true;
+   document.getElementById("client_sub").hidden = true;
+   document.getElementById("client_txt").hidden = true;
+   document.getElementById("submit_btn").hidden = true;
+
+    var backBtn = document.getElementById("back_btn");
+    backBtn.hidden = false;
+}
+    </script>
 
     <!-- scripts start form hear -->
     <script src="assets/js/vendor/jquery.min.js"></script>
