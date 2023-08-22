@@ -115,6 +115,15 @@
   box-sizing: border-box;
 }
 
+.maintenance{
+  background-color:  #6c7279;
+  text-align: center;
+  color: #fff;
+  margin: 200px auto;
+  text-shadow: 1px 1px #ff0000;
+
+}
+
 html {
   margin: 0;
   padding: 0;
