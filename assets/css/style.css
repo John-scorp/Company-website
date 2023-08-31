@@ -15574,7 +15574,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 @media only screen and (max-width: 479px) {
   .header-three .main-header-three a.thumbnail-logo img {
-    padding: 15px;
+    padding: 15px 5px;
   }
 }
 .header-three .main-header-three .right {
