@@ -15570,11 +15570,11 @@ body.sal-disabled [data-sal|=flip] {
   display: none;
 }
 .header-three .main-header-three a.thumbnail-logo img {
-  padding: 30px 48px;
+  padding: 20px;
 }
 @media only screen and (max-width: 479px) {
   .header-three .main-header-three a.thumbnail-logo img {
-    padding: 30px 15px;
+    padding: 15px;
   }
 }
 .header-three .main-header-three .right {
@@ -16564,12 +16564,12 @@ li.has-droupdown {
 }
 
 .rts-breadcrumb-area {
-  padding-top: 153px;
+  padding-top: 180px;
   padding-bottom: 153px;
 }
 @media only screen and (max-width: 767px) {
   .rts-breadcrumb-area {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 }
 .rts-breadcrumb-area .title {
@@ -16657,10 +16657,14 @@ li.has-droupdown {
 }
 
 .rts-sidebar-menu-desktop .logo {
-  margin-top: 50px;
+  margin-top: 15px;
+  padding-top: 10px;
+  
+  padding-right: 60px;
+  
 }
 .rts-sidebar-menu-desktop p.disc {
-  margin-top: 30px;
+  margin: 20px 5px;
   font-size: 16px;
   line-height: 26px;
 }
@@ -17171,6 +17175,7 @@ li.has-droupdown {
   font-weight: 700;
   border-radius: 15px;
   transition: var(--transition);
+  
 }
 .rts-btn.btn-light-3 {
   background: #f64a0026;
@@ -18469,6 +18474,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   background-image: url(../images/banner/slot-machine.avif);
   position: relative;
   z-index: 1;
+  height:50%;
   width: 100%;
 }
 .bg_banner-three.slide-2 {
