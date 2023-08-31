@@ -942,7 +942,7 @@ ol ul {
 }
 
 .mb--25 {
-  margin-bottom: 25px !important;
+  margin-bottom: 5px !important;
 }
 
 .mr--25 {
@@ -15292,7 +15292,7 @@ body.sal-disabled [data-sal|=flip] {
   padding: 48px 0;
   display: block;
   color: #1C2539;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   position: relative;
   transition: var(--transition);
@@ -19301,7 +19301,7 @@ p.disc.banner-para {
 }
 
 .about-inner p.disc {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .bg-about-sm-shape {
@@ -19672,7 +19672,7 @@ p.disc.banner-para {
 .inner-about-three p.disc {
   padding-left: 20px;
   border-left: 5px solid var(--color-primary-3);
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-top: 0;
   font-size: 16px;
   line-height: 26px;
@@ -19895,7 +19895,7 @@ p.disc.banner-para {
   color: #1C2539;
   line-height: 26px;
   margin-top: -4px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .rts-tab-style-one .tab-content .rts-tab-content-one .check-area {
   display: flex;
@@ -20031,7 +20031,7 @@ p.disc.banner-para {
 }
 
 .about-content-inner-style-six p.disc {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .about-content-inner-style-six .item-check-inner {
   padding: 30px;
@@ -20623,7 +20623,7 @@ p.disc.banner-para {
   margin-bottom: 16px;
 }
 .service-detials-step-1 p.disc {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 26px;
 }
@@ -20882,12 +20882,12 @@ p.disc.banner-para {
   }
 }
 .accordion-service-inner .accordion-area .accordion {
-  margin-top: 45px;
+  margin-top: 25px;
 }
 @media only screen and (max-width: 575px) {
   .accordion-service-inner .accordion-area .accordion {
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 .accordion-service-inner .accordion-area .accordion .accordion-item {
