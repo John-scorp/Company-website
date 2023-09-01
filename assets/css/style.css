@@ -680,44 +680,44 @@ ol ul {
 }
 
 .rts-section-gap {
-  padding: 120px 0;
+  padding: 20px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gap {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gap {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 }
 
 .rts-section-gapBottom {
-  padding-bottom: 120px;
+  padding-bottom: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapBottom {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gapBottom {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 
 .rts-section-gapTop {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapTop {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gapTop {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 
@@ -16563,7 +16563,7 @@ li.has-droupdown {
 }
 
 .breadcrumb-bg {
-  background-image: url(../images/breadcrumb/01.jpg);
+  background-image: url(../images/breadcrumb/bg-image-service.jpg);
 }
 
 .rts-breadcrumb-area {
@@ -18084,7 +18084,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   background-image: url(../images/banner/shape/shape.webp);
   height: 100%;
   width: 650px;
-  background-size: cover;
+  background-size: cover;  
   right: 0;
   bottom: 0;
   z-index: 3;
@@ -18477,7 +18477,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   background-image: url(../images/banner/slot-machine.avif);
   position: relative;
   z-index: 1;
-  height:50%;
+  height:100%;
   width: 100%;
 }
 .bg_banner-three.slide-2 {
@@ -18500,7 +18500,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 .bg_banner-three::after {
   position: absolute;
-  height: 75%;
+  height: 100%;
   content: "";
   left: 0;
   top: 0;
@@ -18542,7 +18542,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 @media only screen and (max-width: 479px) {
   .banner-three-inner {
-    padding: 126px 0 0 0;
+    padding: 50px 0 0 0;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -19704,6 +19704,7 @@ p.disc.banner-para {
 .single-business-solution i {
   height: 18px;
   width: 18px;
+  padding:5px;
   background: var(--color-primary-3);
   font-size: 10px;
   border-radius: 50%;
@@ -20628,15 +20629,16 @@ p.disc.banner-para {
   line-height: 26px;
 }
 .service-detials-step-1 .service-details-card {
-  padding: 30px;
+  padding: 10px;
   box-shadow: 0px 8px 30px #6a6a6a1a;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   border-left: 5px solid var(--color-primary);
 }
 .service-detials-step-1 .service-details-card .thumbnail img {
   height: 29px;
   width: 74px;
+  margin-top: 30px;
 }
 .service-detials-step-1 .service-details-card .details {
   margin-left: 20px;
@@ -20670,7 +20672,7 @@ p.disc.banner-para {
   content: "";
   left: 50%;
   top: 50%;
-  background: #DF0A0A;
+  background: #F64A00;
   height: 60px;
   width: 60px;
   transform: translate(-50%, -50%);
@@ -20744,6 +20746,8 @@ p.disc.banner-para {
   color: var(--color-primary);
   font-weight: 700;
 }
+
+
 .service-two-inner .thumbnail.two::after {
   content: "02";
 }
@@ -20832,7 +20836,7 @@ p.disc.banner-para {
 @media only screen and (max-width: 479px) {
   .col-xl-4.col-md-6.col-sm-12.col-12.pb--140.pb_md--100,
 .col-xl-4.col-md-6.col-sm-12.col-12.pb--140.pb_md--60 {
-    padding-bottom: 80px !important;
+    padding-bottom: 40px !important;
   }
 }
 
