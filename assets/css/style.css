@@ -11068,7 +11068,7 @@ body {
   }
 }
 .rts-title-area.contact-fluid::after {
-  content: "Contact Us";
+  content: none;
   left: 49%;
   transform: translateX(-50%);
   z-index: -1;
@@ -28787,7 +28787,7 @@ p.disc.banner-para {
   font-weight: 500 !important;
 }
 .onepage.two .rts-title-area.contact-fluid::after {
-  content: "09";
+  content: none;
   left: 49%;
   transform: translateX(-50%);
   z-index: -1;
