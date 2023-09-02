@@ -19609,7 +19609,7 @@ p.disc.banner-para {
   width: 200px;
   height: 10px;
   width: 120px;
-  background: var(--color-primary-3);
+  background: none;
 }
 .about-three-thumbnail-left .about-sm-thumb {
   position: absolute;
