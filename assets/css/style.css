@@ -11308,6 +11308,13 @@ body {
   top: 0;
 }
 
+.center-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
 .container-2 {
   max-width: 1680px;
   margin: auto;
