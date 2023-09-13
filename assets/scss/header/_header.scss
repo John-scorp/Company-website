@@ -667,10 +667,10 @@
         a {
             &.thumbnail-logo {
                 img {
-                    padding: 20px;
+                    padding: 30px 48px;
 
                     @media #{$small-mobile} {
-                        padding: 15px 15px;
+                        padding: 30px 15px;
                     }
                 }
             }

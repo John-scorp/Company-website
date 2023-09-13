@@ -680,44 +680,44 @@ ol ul {
 }
 
 .rts-section-gap {
-  padding: 20px 0;
+  padding: 120px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gap {
-    padding: 40px 0;
+    padding: 80px 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gap {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 }
 
 .rts-section-gapBottom {
-  padding-bottom: 30px;
+  padding-bottom: 120px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapBottom {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gapBottom {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
 .rts-section-gapTop {
-  padding-top: 30px;
+  padding-top: 120px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapTop {
-    padding-top: 30px;
+    padding-top: 70px;
   }
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gapTop {
-    padding-top: 30px;
+    padding-top: 60px;
   }
 }
 
@@ -9847,7 +9847,7 @@ Background Image
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 75%;
+  
 
 }
 
@@ -18165,22 +18165,22 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   animation: fadeInUp 1.5s;
   animation-delay: 0s;
   display: block;
-  height: 75%;
+  
 }
 .banner-three .swiper-slide-active .banner-three-innerr .title {
   animation: fadeInUp 1.5s;
   animation-delay: 0s;
-  height: 75%;
+  
 }
 .banner-three .swiper-slide-active .banner-three-innerr .disc {
   animation: fadeInUp 1.5s;
   animation-delay: 0s;
-  height: 75%;
+  
 }
 .banner-three .swiper-slide-active .banner-three-innerr a.rts-btn {
   animation: fadeInUp 2.5s;
   animation-delay: 0s;
-  height: 75%;
+  
 }
 .banner-three.banner-four {
   background: url(../images/banner/img.jpg);
@@ -18188,7 +18188,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 75%;
+  
 }
 .banner-three.banner-four::before {
   background: none;
@@ -18484,15 +18484,19 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   background-image: url(../images/banner/slot-machine.avif);
   position: relative;
   z-index: 1;
-  height:100%;
   width: 100%;
+  
 }
 .bg_banner-three.slide-2 {
   background-image: url(../images/banner/spin-wheel.avif);
+  
+  
 }
 .bg_banner-three.slide-3 {
   background-image: url(../images/banner/blackjack-table.avif);
+  
 }
+  
 .bg_banner-three.eight {
   background-image: url(../images/banner/it-3.webp);
   padding-top: 400px;
@@ -18536,7 +18540,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-three-inner {
-  padding: 300px 0 100px 0;
+  padding: 100px 0 100px 0;
   max-width: 100%;
   position: relative;
   z-index: 2;
@@ -18544,12 +18548,12 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 @media only screen and (max-width: 767px) {
   .banner-three-inner {
-    padding: 170px 0 100px 0;
+    padding: 80px 0 100px 0;
   }
 }
 @media only screen and (max-width: 479px) {
   .banner-three-inner {
-    padding: 50px 0 0 0;
+    padding: 80px 0 0 0;
   }
 }
 @media only screen and (max-width: 479px) {
