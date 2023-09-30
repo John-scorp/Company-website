@@ -512,25 +512,30 @@
                     <div class="bg-input-project">
                         <div class="product-form">
                             <div id="form-messages"></div>
-                            <form id="contact-form" action="mailer.php" method="post">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <input type="text" placeholder="Your Name" name="name" required>
+<!--                            <form id="contact-form" action="mailer.php" method="post">-->
+                            <form id="contact-form">
+<!--                                <form id="contact-form" onSubmit="JavaScript:postMyFormData()" method="POST">-->
+<!--                                <form id="contact-form" onSubmit="return postMyFormData();" method="POST">-->
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <input id="client_name"  type="text" placeholder="Your Name" name="name" required>
+                                        </div>
+                                        <div class="col-lg-6 mt_md--20 mt_sm--20">
+                                            <input id="client_email"  type="email" placeholder="Your Email" name="email" required>
+                                        </div>
+                                        <div class="col-12 mt--20">
+                                            <input id="client_sub"  type="text" placeholder="Your Website" name="subject">
+                                        </div>
+                                        <div class="col-12 mt--20">
+                                            <textarea id="client_txt"  placeholder="Your Comment" name="message"></textarea>
+                                        </div>
+                                        <div class="col-12 mt--35">
+<!--                                            <button id="submit_btn" class="rts-btn btn-primary-3 color-h-black" type="submit">Get in Touch</button>-->
+                                            <button id="submit_btn" type="button" class="rts-btn btn-primary-3" onclick="return postMyFormData();">Get in Touch</button>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 mt_md--20 mt_sm--20">
-                                        <input type="email" placeholder="Your Email" name="email" required>
-                                    </div>
-                                    <div class="col-12 mt--20">
-                                        <input type="text" placeholder="Your Website" name="subject">
-                                    </div>
-                                    <div class="col-12 mt--20">
-                                        <textarea placeholder="Your Comment" name="message"></textarea>
-                                    </div>
-                                    <div class="col-12 mt--35">
-                                        <button class="rts-btn btn-primary-3 color-h-black" type="submit">Get in Touch</button>
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
+                            <button id="back_btn" type="button" class="rts-btn btn-primary-3" hidden>Thanks for submitting your message.</button>
                         </div>
                     </div>
                 </div>
@@ -569,6 +574,49 @@
         </svg>
     </div>
     <!-- progress Back to top End -->
+
+     <script>
+      function postMyFormData() {
+    var client_name = $('#client_name').val();
+    var client_email = $('#client_email').val();
+    var client_subject = $('#client_sub').val();
+    var client_txt_msg = $('#client_txt').val();
+    // var formData = $('#contact-form').serializeArray();
+    // formData = formData.reduce(function(obj, item) {
+    //     obj[item.name] = item.value;
+    //     return obj;
+    // }, {});
+    // formData = JSON.stringify(formData);
+        //http://www.akaptech.com:8000/
+        var url = "https://www.akaptech.com/contact_us?&name=" +client_name+"&jsoncallback=?"+"&email="+client_email+"&subject="+client_subject+"&msg="+client_txt_msg;
+
+    $.ajax({
+        type: "GET",
+        url: url,
+        success: function(data) {
+          console.log("Success data="+data);
+        },
+        dataType: "jsonp",
+        contentType : "application/json",
+        crossDomain : true,
+    });
+    //
+    //   $('#client_name').val("");
+    // $('#client_email').val("");
+    // $('#client_sub').val("");
+    // $('#client_txt').val("");
+   document.getElementById("client_name").hidden = true;
+   document.getElementById("client_email").hidden = true;
+   document.getElementById("client_sub").hidden = true;
+   document.getElementById("client_txt").hidden = true;
+   document.getElementById("submit_btn").hidden = true;
+
+    var backBtn = document.getElementById("back_btn");
+    backBtn.hidden = false;
+    // var contact_us_form = document.getElementById("contact-form");
+    // backBtn.hidden = true;
+}
+    </script>
 
 
     <!-- scripts start form hear -->
